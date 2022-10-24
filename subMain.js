@@ -1,4 +1,4 @@
-const moment = require('moment-timezone');
+import moment from 'moment-timezone';
 
 let findStartEndOfMonth = (date, tzString) => {
   startDate = moment(date).tz(tzString).startOf('month').toDate();
